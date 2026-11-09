@@ -1,0 +1,743 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "name": "Rohan Varma (Operations)",
+      "email": "admin@wandercms.com",
+      "passwordHash": "$2b$10$77E0edXq07grfu7OLXfS/udYmBUq8V/OsySCeE114r47GNZ1CfYWq",
+      "role": "staff-admin",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "usr_traveller_01",
+      "name": "Vikram Malhotra",
+      "email": "vikram.malhotra@gmail.com",
+      "passwordHash": "$2b$10$cT7QFxKs4yY45N1DDMHxQeddqFEGOO8ubuYtEiDh172d3ASvHrSgS",
+      "role": "traveller",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "packages": [
+    {
+      "id": "pkg_kl_07",
+      "packageId": "PKG-KL-07",
+      "title": "Munnar, Thekkady and Alleppey houseboat",
+      "slug": "munnar-thekkady-alleppey-houseboat",
+      "destination": "Munnar, Thekkady, Alleppey, Kerala",
+      "description": "Experience the quintessential beauty of God’s Own Country across six unforgettable days. Journey through the mist-shrouded emerald tea plantations of Munnar, explore the rich spice gardens and Periyar wildlife sanctuary in Thekkady, and culminate your holiday with an exclusive private houseboat cruise through the peaceful palm-lined backwaters of Alleppey.",
+      "days": 6,
+      "nights": 5,
+      "hotelCategory": "4 star",
+      "photos": [
+        "/src/assets/images/alleppey_luxury_houseboat_1794053734427.jpg",
+        "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg",
+        "/src/assets/images/thekkady_forest_lake_1794053736196.jpg"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Cochin & Transfer to Munnar (130 km / 4 hrs)",
+          "description": "Warm reception at Cochin International Airport or Ernakulam Railway Station by our private chauffeur. Drive uphill toward Munnar past cascading Cheeyappara and Valara waterfalls. Check in at your luxury hillside resort. Evening at leisure overlooking verdant valleys.",
+          "mealsIncluded": "Dinner",
+          "overnightStay": "Munnar Hill Resort (4 Star)"
+        },
+        {
+          "day": 2,
+          "title": "Munnar Tea Estates & Eravikulam National Park",
+          "description": "Morning visit to Eravikulam National Park, home of the endangered Nilgiri Tahr mountain goat. Later, visit the KDHP Tea Museum and explore Mattupetty Dam, Echo Point, and Kundala Lake. Private tea-tasting session included.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Munnar Hill Resort (4 Star)"
+        },
+        {
+          "day": 3,
+          "title": "Munnar to Thekkady Spice Hills (95 km / 3 hrs)",
+          "description": "Scenic drive across the Western Ghats to Thekkady (Periyar). Afternoon guided walking tour through organic cardamom, pepper, and vanilla plantations. Evening attend a live traditional Kalaripayattu martial arts performance.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Thekkady Forest Canopy (4 Star)"
+        },
+        {
+          "day": 4,
+          "title": "Periyar Wildlife Sanctuary & Transfer to Alleppey (140 km / 4 hrs)",
+          "description": "Early morning boat cruise on Periyar Lake inside the wildlife sanctuary to spot wild elephants, gaur, and rare birds. Proceed downhill to Alleppey. Check in at your traditional backwater resort. Relax by Vembanad Lake.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Alleppey Lagoon Resort (4 Star)"
+        },
+        {
+          "day": 5,
+          "title": "Alleppey Deluxe Private Houseboat Cruise",
+          "description": "Board your private traditional Kettuvallam houseboat at 12:00 noon. Cruise through the narrow canal networks, paddy fields below sea level, and rustic villages. Freshly prepared Kerala lunch, evening tea with banana fritters, and candlelit dinner served on board.",
+          "mealsIncluded": "Breakfast, Lunch & Dinner",
+          "overnightStay": "Private Air-conditioned Houseboat (4 Star Category)"
+        },
+        {
+          "day": 6,
+          "title": "Alleppey Houseboat Check-out & Cochin Departure (75 km / 2 hrs)",
+          "description": "Savor morning breakfast while gliding past tranquil morning backwaters. Check out at 09:30 AM. Chauffeur transfer to Cochin International Airport with sweet memories of Kerala.",
+          "mealsIncluded": "Breakfast"
+        }
+      ],
+      "inclusions": [
+        "Accommodation in verified 4-star category resorts on twin-sharing basis",
+        "1 night private deluxe air-conditioned houseboat stay with all meals on board",
+        "Daily buffet breakfast and dinner at hotels",
+        "Exclusive AC sedan/SUV with professional English/Hindi-speaking chauffeur",
+        "Guided spice plantation walk in Thekkady",
+        "All toll, parking, fuel charges, and driver allowances"
+      ],
+      "exclusions": [
+        "Airfare or train tickets to/from Cochin",
+        "Personal expenses, laundry, and telephone calls",
+        "Optional boating tickets at Periyar Lake or Mattupetty Dam",
+        "Anything not explicitly mentioned in the inclusions"
+      ],
+      "seasonalPrices": [
+        {
+          "id": "sp_kl07_peak",
+          "seasonName": "Peak Season",
+          "startMonth": "October",
+          "endMonth": "March",
+          "pricePerPerson": 32500,
+          "hotelCategory": "4 star",
+          "pricingBasis": "Twin-sharing basis",
+          "gstInformation": "5% GST applicable"
+        },
+        {
+          "id": "sp_kl07_monsoon",
+          "seasonName": "Monsoon Season",
+          "startMonth": "June",
+          "endMonth": "September",
+          "pricePerPerson": 24900,
+          "hotelCategory": "4 star",
+          "pricingBasis": "Twin-sharing basis",
+          "gstInformation": "5% GST applicable"
+        }
+      ],
+      "gstInformation": "5% GST applicable on all bookings",
+      "pricingBasis": "Per person on twin-sharing basis",
+      "currentPublishedVersion": 1,
+      "currentDraftVersion": 1,
+      "status": "published",
+      "seoTitle": "Munnar, Thekkady & Alleppey Houseboat 6 Days Package | WanderCMS",
+      "seoDescription": "Book our bestselling 6-day Kerala holiday package. Explore Munnar tea hills, Periyar wildlife sanctuary, and an authentic Alleppey luxury houseboat stay.",
+      "highlights": [
+        "Tea plantations of Munnar",
+        "Periyar Wildlife Sanctuary",
+        "Overnight Alleppey Houseboat",
+        "Private chauffeur throughout"
+      ],
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "updatedAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "pkg_si_12",
+      "packageId": "PKG-SI-12",
+      "title": "Madurai, Rameswaram and Kanyakumari",
+      "slug": "madurai-rameswaram-kanyakumari",
+      "destination": "Madurai, Rameswaram, Kanyakumari, Tamil Nadu",
+      "description": "A spiritually enriching journey through Tamil Nadu’s most revered heritage capitals. Marvel at the intricate Dravidian gopurams of Madurai Meenakshi Temple, cross the legendary Pamban Sea Bridge to Rameswaram Ramanathaswamy Temple, and stand at the southernmost tip of peninsular India where three oceans meet at Kanyakumari.",
+      "days": 5,
+      "nights": 4,
+      "hotelCategory": "3 star",
+      "photos": [
+        "/src/assets/images/madurai_temple_gopuram_1794053736171.jpg",
+        "/src/assets/images/kanyakumari_memorial_ocean_1794053735714.jpg"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Madurai & Meenakshi Amman Temple",
+          "description": "Arrival at Madurai Airport/Railway station. Check in at comfortable 3-star hotel. In the evening, witness the divine night ceremony and intricate carvings of Sri Meenakshi Sundareswarar Temple.",
+          "mealsIncluded": "Dinner",
+          "overnightStay": "Madurai Heritage Hotel (3 Star)"
+        },
+        {
+          "day": 2,
+          "title": "Madurai to Rameswaram via Pamban Bridge (175 km / 3.5 hrs)",
+          "description": "Drive to the sacred island of Rameswaram across the historic Pamban Bridge. Visit Ramanathaswamy Temple known for its magnificent 1000-pillar corridor and sacred 22 theerthams. Visit Dhanushkodi ghost town and Ram Setu point.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Rameswaram Sea View Hotel (3 Star)"
+        },
+        {
+          "day": 3,
+          "title": "Rameswaram to Kanyakumari (310 km / 6 hrs)",
+          "description": "Morning journey along the Coromandel coast to Kanyakumari, the confluence of the Arabian Sea, Indian Ocean, and Bay of Bengal. Check in and witness the breathtaking sunset from the shore.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Kanyakumari Shore Hotel (3 Star)"
+        },
+        {
+          "day": 4,
+          "title": "Kanyakumari Sightseeing & Trivandrum Transfer",
+          "description": "Early morning sunrise view. Ferry ride to Vivekananda Rock Memorial and Thiruvalluvar Statue. Visit Gandhi Memorial Mandapam and Bhagavathy Amman Temple. Afternoon drive to Trivandrum (90 km / 2.5 hrs).",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Trivandrum City Hotel (3 Star)"
+        },
+        {
+          "day": 5,
+          "title": "Padmanabhaswamy Temple & Trivandrum Departure",
+          "description": "Morning darshan at the magnificent Sree Padmanabhaswamy Temple. Later drop at Trivandrum Airport or Railway Station for onward journey.",
+          "mealsIncluded": "Breakfast"
+        }
+      ],
+      "inclusions": [
+        "4 nights accommodation in clean 3-star hotels on twin-sharing basis",
+        "Daily breakfast and dinner",
+        "Private air-conditioned commercial vehicle with courteous chauffeur",
+        "All state permits, parking fees, and toll taxes"
+      ],
+      "exclusions": [
+        "Temple special entry / darshan tickets and camera charges",
+        "Ferry tickets at Kanyakumari",
+        "Any personal expenses or meals not specified"
+      ],
+      "seasonalPrices": [
+        {
+          "id": "sp_si12_allyear",
+          "seasonName": "All Year Regular",
+          "startMonth": "January",
+          "endMonth": "December",
+          "pricePerPerson": 18750,
+          "hotelCategory": "3 star",
+          "pricingBasis": "Twin-sharing basis",
+          "gstInformation": "5% GST applicable"
+        }
+      ],
+      "gstInformation": "5% GST applicable on all bookings",
+      "pricingBasis": "Per person on twin-sharing basis",
+      "currentDraftVersion": 1,
+      "status": "draft",
+      "seoTitle": "Madurai, Rameswaram & Kanyakumari 5 Days Temple Tour | WanderCMS",
+      "seoDescription": "Explore South India heritage with our 5-day Madurai, Rameswaram, and Kanyakumari temple and coastal holiday package.",
+      "highlights": [
+        "Meenakshi Amman Temple",
+        "Pamban Sea Bridge",
+        "Ramanathaswamy 1000 Pillars",
+        "Vivekananda Rock Memorial"
+      ],
+      "createdAt": "2026-01-15T12:00:00.000Z",
+      "updatedAt": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "id": "pkg_kl_03",
+      "packageId": "PKG-KL-03",
+      "title": "Wayanad Rainforest, Waterfalls and Wildlife Retreat",
+      "slug": "wayanad-rainforest-waterfalls-wildlife",
+      "destination": "Wayanad, Calicut, Kerala",
+      "description": "Immerse in the misty rainforest canopy of Wayanad in northern Kerala. Trek to the historic Edakkal Caves with Neolithic petroglyphs, bamboo raft along tranquil Kuruva Island, and rejuvenate in luxury plantation tree-houses surrounded by cardamom estates.",
+      "days": 4,
+      "nights": 3,
+      "hotelCategory": "4 star",
+      "photos": [
+        "/src/assets/images/thekkady_forest_lake_1794053736196.jpg",
+        "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Calicut Arrival & Drive to Wayanad Ghats (85 km / 2.5 hrs)",
+          "description": "Pick-up from Calicut Airport/Station. Drive up the Thamarassery Churam mountain pass with 9 hairpin curves. Check in to secluded rainforest resort.",
+          "mealsIncluded": "Dinner",
+          "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+        },
+        {
+          "day": 2,
+          "title": "Edakkal Caves & Soochipara Waterfalls",
+          "description": "Hike to the ancient Edakkal Caves followed by an excursion to Soochipara 3-tiered waterfall cascading through dense evergreen forests.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+        },
+        {
+          "day": 3,
+          "title": "Banasura Sagar Dam & Kuruva Island Bamboo Rafting",
+          "description": "Visit India’s largest earthen dam at Banasura Sagar with speed boating. Afternoon bamboo rafting on the Kabini River tributaries at Kuruva Island.",
+          "mealsIncluded": "Breakfast & Dinner",
+          "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+        },
+        {
+          "day": 4,
+          "title": "Tea Plantation Tour & Calicut Departure",
+          "description": "Morning walk in organic coffee and pepper plantations. Check out and return to Calicut for your flight or train.",
+          "mealsIncluded": "Breakfast"
+        }
+      ],
+      "inclusions": [
+        "3 nights stay in luxury eco-plantation resort",
+        "Daily breakfast and authentic Malabar dinners",
+        "Private AC vehicle for all transfers and sightseeing",
+        "Guided spice plantation trek"
+      ],
+      "exclusions": [
+        "Boating tickets and sanctuary entry fees",
+        "Airfare/Train tickets",
+        "Personal items"
+      ],
+      "seasonalPrices": [
+        {
+          "id": "sp_kl03_peak",
+          "seasonName": "Peak Season",
+          "startMonth": "October",
+          "endMonth": "March",
+          "pricePerPerson": 21900,
+          "hotelCategory": "4 star",
+          "pricingBasis": "Twin-sharing basis",
+          "gstInformation": "5% GST applicable"
+        },
+        {
+          "id": "sp_kl03_monsoon",
+          "seasonName": "Monsoon Season",
+          "startMonth": "June",
+          "endMonth": "September",
+          "pricePerPerson": 16500,
+          "hotelCategory": "4 star",
+          "pricingBasis": "Twin-sharing basis",
+          "gstInformation": "5% GST applicable"
+        }
+      ],
+      "gstInformation": "5% GST applicable on all bookings",
+      "pricingBasis": "Per person on twin-sharing basis",
+      "currentPublishedVersion": 1,
+      "currentDraftVersion": 1,
+      "status": "published",
+      "seoTitle": "Wayanad 4 Days Rainforest & Wildlife Tour Package | WanderCMS",
+      "seoDescription": "Escape to mist-covered Wayanad with our 4-day rainforest tour. Discover Edakkal caves, waterfalls, and luxury eco-resorts.",
+      "highlights": [
+        "Banasura Sagar Dam",
+        "Edakkal Neolithic Caves",
+        "Kuruva Island Bamboo Rafting",
+        "Eco Plantation Stay"
+      ],
+      "createdAt": "2026-01-20T09:00:00.000Z",
+      "updatedAt": "2026-01-20T09:00:00.000Z"
+    }
+  ],
+  "packageVersions": [
+    {
+      "id": "ver_kl07_v1",
+      "packageId": "PKG-KL-07",
+      "versionNumber": 1,
+      "contentSnapshot": {
+        "id": "pkg_kl_07",
+        "packageId": "PKG-KL-07",
+        "title": "Munnar, Thekkady and Alleppey houseboat",
+        "slug": "munnar-thekkady-alleppey-houseboat",
+        "destination": "Munnar, Thekkady, Alleppey, Kerala",
+        "description": "Experience the quintessential beauty of God’s Own Country across six unforgettable days. Journey through the mist-shrouded emerald tea plantations of Munnar, explore the rich spice gardens and Periyar wildlife sanctuary in Thekkady, and culminate your holiday with an exclusive private houseboat cruise through the peaceful palm-lined backwaters of Alleppey.",
+        "days": 6,
+        "nights": 5,
+        "hotelCategory": "4 star",
+        "photos": [
+          "/src/assets/images/alleppey_luxury_houseboat_1794053734427.jpg",
+          "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg",
+          "/src/assets/images/thekkady_forest_lake_1794053736196.jpg"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival in Cochin & Transfer to Munnar (130 km / 4 hrs)",
+            "description": "Warm reception at Cochin International Airport or Ernakulam Railway Station by our private chauffeur. Drive uphill toward Munnar past cascading Cheeyappara and Valara waterfalls. Check in at your luxury hillside resort. Evening at leisure overlooking verdant valleys.",
+            "mealsIncluded": "Dinner",
+            "overnightStay": "Munnar Hill Resort (4 Star)"
+          },
+          {
+            "day": 2,
+            "title": "Munnar Tea Estates & Eravikulam National Park",
+            "description": "Morning visit to Eravikulam National Park, home of the endangered Nilgiri Tahr mountain goat. Later, visit the KDHP Tea Museum and explore Mattupetty Dam, Echo Point, and Kundala Lake. Private tea-tasting session included.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Munnar Hill Resort (4 Star)"
+          },
+          {
+            "day": 3,
+            "title": "Munnar to Thekkady Spice Hills (95 km / 3 hrs)",
+            "description": "Scenic drive across the Western Ghats to Thekkady (Periyar). Afternoon guided walking tour through organic cardamom, pepper, and vanilla plantations. Evening attend a live traditional Kalaripayattu martial arts performance.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Thekkady Forest Canopy (4 Star)"
+          },
+          {
+            "day": 4,
+            "title": "Periyar Wildlife Sanctuary & Transfer to Alleppey (140 km / 4 hrs)",
+            "description": "Early morning boat cruise on Periyar Lake inside the wildlife sanctuary to spot wild elephants, gaur, and rare birds. Proceed downhill to Alleppey. Check in at your traditional backwater resort. Relax by Vembanad Lake.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Alleppey Lagoon Resort (4 Star)"
+          },
+          {
+            "day": 5,
+            "title": "Alleppey Deluxe Private Houseboat Cruise",
+            "description": "Board your private traditional Kettuvallam houseboat at 12:00 noon. Cruise through the narrow canal networks, paddy fields below sea level, and rustic villages. Freshly prepared Kerala lunch, evening tea with banana fritters, and candlelit dinner served on board.",
+            "mealsIncluded": "Breakfast, Lunch & Dinner",
+            "overnightStay": "Private Air-conditioned Houseboat (4 Star Category)"
+          },
+          {
+            "day": 6,
+            "title": "Alleppey Houseboat Check-out & Cochin Departure (75 km / 2 hrs)",
+            "description": "Savor morning breakfast while gliding past tranquil morning backwaters. Check out at 09:30 AM. Chauffeur transfer to Cochin International Airport with sweet memories of Kerala.",
+            "mealsIncluded": "Breakfast"
+          }
+        ],
+        "inclusions": [
+          "Accommodation in verified 4-star category resorts on twin-sharing basis",
+          "1 night private deluxe air-conditioned houseboat stay with all meals on board",
+          "Daily buffet breakfast and dinner at hotels",
+          "Exclusive AC sedan/SUV with professional English/Hindi-speaking chauffeur",
+          "Guided spice plantation walk in Thekkady",
+          "All toll, parking, fuel charges, and driver allowances"
+        ],
+        "exclusions": [
+          "Airfare or train tickets to/from Cochin",
+          "Personal expenses, laundry, and telephone calls",
+          "Optional boating tickets at Periyar Lake or Mattupetty Dam",
+          "Anything not explicitly mentioned in the inclusions"
+        ],
+        "seasonalPrices": [
+          {
+            "id": "sp_kl07_peak",
+            "seasonName": "Peak Season",
+            "startMonth": "October",
+            "endMonth": "March",
+            "pricePerPerson": 32500,
+            "hotelCategory": "4 star",
+            "pricingBasis": "Twin-sharing basis",
+            "gstInformation": "5% GST applicable"
+          },
+          {
+            "id": "sp_kl07_monsoon",
+            "seasonName": "Monsoon Season",
+            "startMonth": "June",
+            "endMonth": "September",
+            "pricePerPerson": 24900,
+            "hotelCategory": "4 star",
+            "pricingBasis": "Twin-sharing basis",
+            "gstInformation": "5% GST applicable"
+          }
+        ],
+        "gstInformation": "5% GST applicable on all bookings",
+        "pricingBasis": "Per person on twin-sharing basis",
+        "currentPublishedVersion": 1,
+        "currentDraftVersion": 1,
+        "status": "published",
+        "seoTitle": "Munnar, Thekkady & Alleppey Houseboat 6 Days Package | WanderCMS",
+        "seoDescription": "Book our bestselling 6-day Kerala holiday package. Explore Munnar tea hills, Periyar wildlife sanctuary, and an authentic Alleppey luxury houseboat stay.",
+        "highlights": [
+          "Tea plantations of Munnar",
+          "Periyar Wildlife Sanctuary",
+          "Overnight Alleppey Houseboat",
+          "Private chauffeur throughout"
+        ],
+        "createdAt": "2026-01-10T10:00:00.000Z",
+        "updatedAt": "2026-01-10T10:00:00.000Z"
+      },
+      "editorId": "usr_admin_01",
+      "changeSummary": "Initial published package with peak & monsoon seasonal rates",
+      "status": "published",
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "publishedAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "ver_si12_v1",
+      "packageId": "PKG-SI-12",
+      "versionNumber": 1,
+      "contentSnapshot": {
+        "id": "pkg_si_12",
+        "packageId": "PKG-SI-12",
+        "title": "Madurai, Rameswaram and Kanyakumari",
+        "slug": "madurai-rameswaram-kanyakumari",
+        "destination": "Madurai, Rameswaram, Kanyakumari, Tamil Nadu",
+        "description": "A spiritually enriching journey through Tamil Nadu’s most revered heritage capitals. Marvel at the intricate Dravidian gopurams of Madurai Meenakshi Temple, cross the legendary Pamban Sea Bridge to Rameswaram Ramanathaswamy Temple, and stand at the southernmost tip of peninsular India where three oceans meet at Kanyakumari.",
+        "days": 5,
+        "nights": 4,
+        "hotelCategory": "3 star",
+        "photos": [
+          "/src/assets/images/madurai_temple_gopuram_1794053736171.jpg",
+          "/src/assets/images/kanyakumari_memorial_ocean_1794053735714.jpg"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Arrival in Madurai & Meenakshi Amman Temple",
+            "description": "Arrival at Madurai Airport/Railway station. Check in at comfortable 3-star hotel. In the evening, witness the divine night ceremony and intricate carvings of Sri Meenakshi Sundareswarar Temple.",
+            "mealsIncluded": "Dinner",
+            "overnightStay": "Madurai Heritage Hotel (3 Star)"
+          },
+          {
+            "day": 2,
+            "title": "Madurai to Rameswaram via Pamban Bridge (175 km / 3.5 hrs)",
+            "description": "Drive to the sacred island of Rameswaram across the historic Pamban Bridge. Visit Ramanathaswamy Temple known for its magnificent 1000-pillar corridor and sacred 22 theerthams. Visit Dhanushkodi ghost town and Ram Setu point.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Rameswaram Sea View Hotel (3 Star)"
+          },
+          {
+            "day": 3,
+            "title": "Rameswaram to Kanyakumari (310 km / 6 hrs)",
+            "description": "Morning journey along the Coromandel coast to Kanyakumari, the confluence of the Arabian Sea, Indian Ocean, and Bay of Bengal. Check in and witness the breathtaking sunset from the shore.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Kanyakumari Shore Hotel (3 Star)"
+          },
+          {
+            "day": 4,
+            "title": "Kanyakumari Sightseeing & Trivandrum Transfer",
+            "description": "Early morning sunrise view. Ferry ride to Vivekananda Rock Memorial and Thiruvalluvar Statue. Visit Gandhi Memorial Mandapam and Bhagavathy Amman Temple. Afternoon drive to Trivandrum (90 km / 2.5 hrs).",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Trivandrum City Hotel (3 Star)"
+          },
+          {
+            "day": 5,
+            "title": "Padmanabhaswamy Temple & Trivandrum Departure",
+            "description": "Morning darshan at the magnificent Sree Padmanabhaswamy Temple. Later drop at Trivandrum Airport or Railway Station for onward journey.",
+            "mealsIncluded": "Breakfast"
+          }
+        ],
+        "inclusions": [
+          "4 nights accommodation in clean 3-star hotels on twin-sharing basis",
+          "Daily breakfast and dinner",
+          "Private air-conditioned commercial vehicle with courteous chauffeur",
+          "All state permits, parking fees, and toll taxes"
+        ],
+        "exclusions": [
+          "Temple special entry / darshan tickets and camera charges",
+          "Ferry tickets at Kanyakumari",
+          "Any personal expenses or meals not specified"
+        ],
+        "seasonalPrices": [
+          {
+            "id": "sp_si12_allyear",
+            "seasonName": "All Year Regular",
+            "startMonth": "January",
+            "endMonth": "December",
+            "pricePerPerson": 18750,
+            "hotelCategory": "3 star",
+            "pricingBasis": "Twin-sharing basis",
+            "gstInformation": "5% GST applicable"
+          }
+        ],
+        "gstInformation": "5% GST applicable on all bookings",
+        "pricingBasis": "Per person on twin-sharing basis",
+        "currentDraftVersion": 1,
+        "status": "draft",
+        "seoTitle": "Madurai, Rameswaram & Kanyakumari 5 Days Temple Tour | WanderCMS",
+        "seoDescription": "Explore South India heritage with our 5-day Madurai, Rameswaram, and Kanyakumari temple and coastal holiday package.",
+        "highlights": [
+          "Meenakshi Amman Temple",
+          "Pamban Sea Bridge",
+          "Ramanathaswamy 1000 Pillars",
+          "Vivekananda Rock Memorial"
+        ],
+        "createdAt": "2026-01-15T12:00:00.000Z",
+        "updatedAt": "2026-01-15T12:00:00.000Z"
+      },
+      "editorId": "usr_admin_01",
+      "changeSummary": "Initial draft version for South India temple circuit",
+      "status": "draft",
+      "createdAt": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "id": "ver_kl03_v1",
+      "packageId": "PKG-KL-03",
+      "versionNumber": 1,
+      "contentSnapshot": {
+        "id": "pkg_kl_03",
+        "packageId": "PKG-KL-03",
+        "title": "Wayanad Rainforest, Waterfalls and Wildlife Retreat",
+        "slug": "wayanad-rainforest-waterfalls-wildlife",
+        "destination": "Wayanad, Calicut, Kerala",
+        "description": "Immerse in the misty rainforest canopy of Wayanad in northern Kerala. Trek to the historic Edakkal Caves with Neolithic petroglyphs, bamboo raft along tranquil Kuruva Island, and rejuvenate in luxury plantation tree-houses surrounded by cardamom estates.",
+        "days": 4,
+        "nights": 3,
+        "hotelCategory": "4 star",
+        "photos": [
+          "/src/assets/images/thekkady_forest_lake_1794053736196.jpg",
+          "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "title": "Calicut Arrival & Drive to Wayanad Ghats (85 km / 2.5 hrs)",
+            "description": "Pick-up from Calicut Airport/Station. Drive up the Thamarassery Churam mountain pass with 9 hairpin curves. Check in to secluded rainforest resort.",
+            "mealsIncluded": "Dinner",
+            "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+          },
+          {
+            "day": 2,
+            "title": "Edakkal Caves & Soochipara Waterfalls",
+            "description": "Hike to the ancient Edakkal Caves followed by an excursion to Soochipara 3-tiered waterfall cascading through dense evergreen forests.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+          },
+          {
+            "day": 3,
+            "title": "Banasura Sagar Dam & Kuruva Island Bamboo Rafting",
+            "description": "Visit India’s largest earthen dam at Banasura Sagar with speed boating. Afternoon bamboo rafting on the Kabini River tributaries at Kuruva Island.",
+            "mealsIncluded": "Breakfast & Dinner",
+            "overnightStay": "Wayanad Eco Plantation Resort (4 Star)"
+          },
+          {
+            "day": 4,
+            "title": "Tea Plantation Tour & Calicut Departure",
+            "description": "Morning walk in organic coffee and pepper plantations. Check out and return to Calicut for your flight or train.",
+            "mealsIncluded": "Breakfast"
+          }
+        ],
+        "inclusions": [
+          "3 nights stay in luxury eco-plantation resort",
+          "Daily breakfast and authentic Malabar dinners",
+          "Private AC vehicle for all transfers and sightseeing",
+          "Guided spice plantation trek"
+        ],
+        "exclusions": [
+          "Boating tickets and sanctuary entry fees",
+          "Airfare/Train tickets",
+          "Personal items"
+        ],
+        "seasonalPrices": [
+          {
+            "id": "sp_kl03_peak",
+            "seasonName": "Peak Season",
+            "startMonth": "October",
+            "endMonth": "March",
+            "pricePerPerson": 21900,
+            "hotelCategory": "4 star",
+            "pricingBasis": "Twin-sharing basis",
+            "gstInformation": "5% GST applicable"
+          },
+          {
+            "id": "sp_kl03_monsoon",
+            "seasonName": "Monsoon Season",
+            "startMonth": "June",
+            "endMonth": "September",
+            "pricePerPerson": 16500,
+            "hotelCategory": "4 star",
+            "pricingBasis": "Twin-sharing basis",
+            "gstInformation": "5% GST applicable"
+          }
+        ],
+        "gstInformation": "5% GST applicable on all bookings",
+        "pricingBasis": "Per person on twin-sharing basis",
+        "currentPublishedVersion": 1,
+        "currentDraftVersion": 1,
+        "status": "published",
+        "seoTitle": "Wayanad 4 Days Rainforest & Wildlife Tour Package | WanderCMS",
+        "seoDescription": "Escape to mist-covered Wayanad with our 4-day rainforest tour. Discover Edakkal caves, waterfalls, and luxury eco-resorts.",
+        "highlights": [
+          "Banasura Sagar Dam",
+          "Edakkal Neolithic Caves",
+          "Kuruva Island Bamboo Rafting",
+          "Eco Plantation Stay"
+        ],
+        "createdAt": "2026-01-20T09:00:00.000Z",
+        "updatedAt": "2026-01-20T09:00:00.000Z"
+      },
+      "editorId": "usr_admin_01",
+      "changeSummary": "Initial published package for Wayanad Eco Retreat",
+      "status": "published",
+      "createdAt": "2026-01-20T09:00:00.000Z",
+      "publishedAt": "2026-01-20T09:00:00.000Z"
+    }
+  ],
+  "enquiries": [
+    {
+      "id": "enq_sample_01",
+      "customerName": "Vikram Malhotra",
+      "email": "vikram.malhotra@gmail.com",
+      "phone": "+91 98201 44521",
+      "destination": "Kerala",
+      "travelDate": "December 2026",
+      "adults": 2,
+      "children": 1,
+      "duration": "5-6 nights",
+      "budget": 120000,
+      "originalMessage": "Hi, 2 adults and 1 kid, Kerala 5-6 nights in December, budget around 1.2 lakh total, houseboat a must.",
+      "whatsappConsent": true,
+      "status": "New",
+      "acknowledgementStatus": "Recorded",
+      "acknowledgementTimestamp": "2026-11-06T14:30:00.000Z",
+      "internalNotes": [
+        {
+          "id": "note_01",
+          "author": "System Auto-Ingest",
+          "text": "Enquiry received via website package form. AI extraction processed automatically.",
+          "createdAt": "2026-11-06T14:30:05.000Z"
+        },
+        {
+          "id": "note_1794220585212",
+          "author": "WanderCMS Mail Desk",
+          "text": "Official booking summary & quotation dispatched to kalyanilalugani1312@gmail.com",
+          "createdAt": "2026-11-09T10:36:25.212Z"
+        }
+      ],
+      "createdAt": "2026-11-06T14:30:00.000Z",
+      "updatedAt": "2026-11-09T10:36:25.212Z"
+    }
+  ],
+  "aiExtractions": [
+    {
+      "id": "aix_sample_01",
+      "enquiryId": "enq_sample_01",
+      "extractedFields": {
+        "destination": "Kerala",
+        "adults": 2,
+        "children": 1,
+        "duration": "5-6 nights",
+        "travelMonth": "December",
+        "budget": 120000,
+        "requirements": [
+          "Houseboat",
+          "Family friendly",
+          "Child with parents"
+        ]
+      },
+      "confidence": "high",
+      "missingFields": [],
+      "correctionHistory": [],
+      "processingStatus": "completed",
+      "provider": "groq",
+      "createdAt": "2026-11-06T14:30:05.000Z",
+      "updatedAt": "2026-11-06T14:30:05.000Z"
+    }
+  ],
+  "enquiryReplies": [
+    {
+      "id": "rep_sample_01",
+      "enquiryId": "enq_sample_01",
+      "draftContent": "Dear Vikram,\n\nGreetings from WanderCMS, Kochi!\n\nThank you for reaching out regarding your family holiday to Kerala for 2 adults and 1 child this December. We would be delighted to host you.\n\nBased on your requirement for a 5-6 night journey with a private luxury houseboat and a budget of ₹1,20,000, our bestselling package \"Munnar, Thekkady and Alleppey houseboat\" (PKG-KL-07, 6 Days / 5 Nights) is an ideal match. During peak season in December, the verified package rate is ₹32,500 per person on a twin-sharing basis (plus 5% GST), perfectly accommodating your family within budget.\n\nThis journey features:\n• 2 nights in the misty tea plantations of Munnar\n• 1 night amidst the spice hills of Thekkady (Periyar)\n• 1 night backwater resort stay\n• 1 full day & night on your private, air-conditioned luxury houseboat in Alleppey with all traditional Kerala meals prepared on board\n• Private air-conditioned car with a seasoned chauffeur throughout.\n\nPlease let us know if your travel dates are flexible so we can reserve your houseboat slot.\n\nWarm regards,\nTravel Specialist Team\nWanderCMS, Kochi",
+      "approvalStatus": "draft",
+      "createdAt": "2026-11-06T14:30:10.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act_1794220585213_5s64",
+      "userId": "traveller",
+      "userName": "traveller",
+      "action": "Dispatched travel quotation voucher to Gmail (kalyanilalugani1312@gmail.com) for booking #2026-001",
+      "entityType": "enquiry",
+      "entityId": "ENQ-2026-001",
+      "timestamp": "2026-11-09T10:36:25.213Z"
+    },
+    {
+      "id": "act_init_01",
+      "userId": "usr_admin_01",
+      "userName": "Rohan Varma (Operations)",
+      "action": "Published package PKG-KL-07",
+      "entityType": "package",
+      "entityId": "pkg_kl_07",
+      "timestamp": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "act_init_02",
+      "userId": "usr_admin_01",
+      "userName": "Rohan Varma (Operations)",
+      "action": "Created draft package PKG-SI-12",
+      "entityType": "package",
+      "entityId": "pkg_si_12",
+      "timestamp": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "id": "act_init_03",
+      "userId": "system",
+      "userName": "System Auto-Ingest",
+      "action": "Received enquiry from Vikram Malhotra (Kerala, 2A + 1C, Dec)",
+      "entityType": "enquiry",
+      "entityId": "enq_sample_01",
+      "timestamp": "2026-11-06T14:30:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+# MASTER PROJECT PROMPT: WANDERCMS
+
+Act as a senior full-stack software architect, principal React developer, backend engineer, database architect, AI engineer, UI/UX designer and QA engineer.
+
+Your task is to design and build a complete, production-quality, full-stack web application called WANDERCMS.
+
+This application is being developed as a Software Engineering Intern take-home assignment for Isocode Labs.
+
+IMPORTANT: This is a real software engineering assignment. Do not create a static website, frontend-only prototype, or non-functional dashboard.
+
+Build a complete working product with frontend, backend, database, authentication, AI integration, testing, security, realistic sample data and deployment configuration.
+
+Follow every requirement below.
+
+==================================================
+1. PROJECT OVERVIEW
+==================================================
+
+PROJECT NAME:
+WanderCMS
+
+TAGLINE:
+Discover South India. Experience More.
+
+PROJECT TYPE:
+AI-powered Tour Operator Website and Content Management System.
+
+CLIENT:
+Company A, Kochi, Kerala, India.
+
+BUSINESS:
+A tour operator selling Kerala and South India holiday packages to families, honeymooners and international tourist groups.
+
+CLIENT BUSINESS INFORMATION:
+- 48 employees.
+- Annual revenue approximately ₹28–34 crore.
+- Approximately 4,300 bookings annually.
+- Approximately 60 travel packages.
+
+BUSINESS PROBLEMS:
+
+1. The existing website is six years old.
+2. Package and price changes cost ₹3,000 and take three days.
+3. Blogs are hosted separately and do not connect to packages.
+4. Enquiries arrive from multiple channels and are tracked manually in Excel.
+5. Some enquiries receive replies after 12 hours.
+6. The client needs an easy-to-use content management system.
+7. The client wants all enquiries centralised.
+8. The client wants AI to extract customer requirements and suggest suitable packages.
+
+OUR OBJECTIVE:
+
+Build a modern travel website with an internal CMS and AI-powered enquiry management system.
+
+The application must allow staff to:
+- Manage travel packages.
+- Update seasonal pricing.
+- Preview and publish packages.
+- Preserve package versions.
+- Receive and manage enquiries.
+- Use AI to extract enquiry details.
+- Recommend relevant travel packages.
+- Generate reply drafts for human approval.
+
+==================================================
+2. IMPORTANT ASSIGNMENT REQUIREMENTS
+==================================================
+
+The mandatory CORE BUILD consists of:
+
+1. Public package pages.
+2. Package CMS with seasonal prices.
+3. Package preview.
+4. Enquiry form.
+5. Admin enquiry inbox.
+6. Traveller and staff-admin roles.
+7. AI enquiry extraction.
+8. AI package suggestions.
+
+Approximately 6–8 main screens.
+
+Prioritise these features above optional features.
+
+The following are optional extensions:
+- Full blog CMS.
+- Quote PDF generation.
+- Advanced analytics.
+- Complete activity history interface.
+
+Do not sacrifice the core functionality to build optional features.
+
+==================================================
+3. TECHNOLOGY STACK
+==================================================
+
+Use this architecture consistently.
+
+FRONTEND:
+- Next.js.
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Lucide React.
+- React Hook Form.
+- Zod validation.
+
+BACKEND:
+- Node.js.
+- Next.js App Router.
+- Server-side route handlers.
+- REST-style APIs.
+- Server-side business logic.
+
+DATABASE:
+- MongoDB Atlas.
+- Mongoose ODM.
+
+AUTHENTICATION:
+- Secure authentication.
+- JWT.
+- bcrypt password hashing.
+- HTTP-only cookies.
+- Role-based authorisation.
+
+AI:
+- Groq API.
+- Structured JSON extraction.
+- AI reply generation.
+- Deterministic package ranking.
+
+IMAGE STORAGE:
+- Cloudinary or another configurable image storage provider.
+
+TESTING:
+- Vitest or Jest.
+- API tests.
+- Business logic tests.
+- Validation tests.
+
+DEPLOYMENT:
+- Vercel for the Next.js application.
+- MongoDB Atlas for persistent database storage.
+
+Use one coherent application rather than unnecessary microservices.
+
+Do not introduce Firebase as a replacement for MongoDB.
+
+If an external service is not configured, display a clear setup error instead of pretending that the integration works.
+
+==================================================
+4. APPLICATION DESIGN AND BRAND IDENTITY
+==================================================
+
+Create a premium, minimal tourism website.
+
+The design must communicate:
+- Trust.
+- Luxury.
+- Comfort.
+- Travel inspiration.
+- Professionalism.
+- Simplicity.
+
+DESIGN DIRECTION:
+
+Primary colours:
+- Deep forest green: #173D32.
+- Warm ivory: #F8F7F2.
+- White: #FFFFFF.
+- Muted gold: #B89A56.
+- Charcoal: #252525.
+
+Use:
+- Large destination photographs.
+- Elegant typography.
+- Generous whitespace.
+- Minimal navigation.
+- Subtle hover effects.
+- Clean cards.
+- Clear CTAs.
+- Consistent spacing.
+- Responsive layouts.
+
+Use appropriate high-quality travel imagery featuring:
+- Munnar tea plantations.
+- Alleppey houseboats.
+- Thekkady forests.
+- Kerala backwaters.
+- South Indian temples.
+- Coastal destinations.
+
+Use legitimate image URLs or configurable image uploads.
+
+Never use broken image placeholders.
+
+Do not overuse gradients, shadows or animations.
+
+The admin interface must be just as polished as the public website.
+
+Every button must perform a meaningful action.
+
+Implement loading, error, empty and success states.
+
+==================================================
+5. APPLICATION STRUCTURE
+==================================================
+
+Create two major sections.
+
+A. PUBLIC TRAVEL WEBSITE.
+
+B. STAFF ADMIN APPLICATION.
+
+USER ROLES:
+
+1. TRAVELLER
+2. STAFF ADMIN
+
+TRAVELLER PERMISSIONS:
+- Browse packages.
+- Search packages.
+- View package details.
+- Submit enquiries.
+- View enquiry confirmation.
+- Access public content.
+
+STAFF ADMIN PERMISSIONS:
+- Sign in.
+- Access admin dashboard.
+- Create packages.
+- Edit packages.
+- Duplicate packages.
+- Manage seasonal prices.
+- Save drafts.
+- Preview drafts.
+- Publish packages.
+- Inspect package versions.
+- View enquiries.
+- Correct AI extraction.
+- Review AI recommendations.
+- Approve reply drafts.
+- Update enquiry status.
+- Add internal notes.
+
+Protect all admin APIs on the server.
+
+Hiding an admin button is not sufficient authorisation.
+
+==================================================
+6. SCREEN 1: PUBLIC HOMEPAGE
+==================================================
+
+Build an elegant tourism homepage.
+
+NAVIGATION:
+
+Logo: WANDERCMS
+
+Menu:
+- Home
+- Destinations
+- Packages
+- About
+- Contact
+
+Right side:
+- Enquire Now.
+
+HERO SECTION:
+
+Heading:
+"Discover the Beauty of South India"
+
+Subtitle:
+"Thoughtfully designed journeys through Kerala and beyond."
+
+Background:
+Full-width Kerala travel photograph.
+
+Search interface:
+- Destination.
+- Travel month.
+- Number of travellers.
+- Search Packages button.
+
+Below the hero:
+
+SECTION: POPULAR DESTINATIONS
+
+Display:
+- Munnar.
+- Thekkady.
+- Alleppey.
+- Madurai.
+- Rameswaram.
+- Kanyakumari.
+
+SECTION: FEATURED PACKAGES
+
+Show published packages retrieved from MongoDB.
+
+SECTION: WHY TRAVEL WITH US?
+
+Use general service-oriented content without inventing client awards, certifications or testimonials.
+
+SECTION: TRAVEL INSPIRATION
+
+Show links to travel articles if available.
+
+SECTION: FOOTER
+
+Include navigation, contact placeholder information and relevant policies.
+
+Do not invent actual company contact details.
+
+==================================================
+7. SCREEN 2: PACKAGE LISTING
+==================================================
+
+Create a package discovery page.
+
+Display package cards with:
+
+- Destination photograph.
+- Package title.
+- Destination.
+- Duration.
+- Hotel category.
+- Seasonal starting price.
+- View Details button.
+- Enquire button.
+
+FILTERS:
+
+- Destination.
+- Duration.
+- Budget.
+- Season.
+- Hotel category.
+
+SEARCH:
+
+Implement real database-backed search.
+
+SORTING:
+- Price low to high.
+- Price high to low.
+- Duration.
+
+Only published packages must appear.
+
+Implement pagination or efficient loading.
+
+Display a helpful empty state when no packages match.
+
+==================================================
+8. SCREEN 3: PACKAGE DETAIL PAGE
+==================================================
+
+Each package must have a clean URL.
+
+Example:
+
+/packages/munnar-thekkady-alleppey-houseboat
+
+Display:
+
+1. Main photograph.
+2. Image gallery.
+3. Package title.
+4. Destination.
+5. Duration.
+6. Description.
+7. Hotel category.
+8. Day-wise itinerary.
+9. Inclusions.
+10. Exclusions.
+11. Seasonal pricing.
+12. Map or destination location.
+13. Important travel information.
+14. Enquire Now button.
+
+PRICING RULES:
+
+Every price must display:
+- Price per person.
+- Twin-sharing basis.
+- GST information.
+
+All prices must come from the database.
+
+Never invent prices through AI.
+
+If GST details are unknown, display the configured GST information or an explicit note that the rate requires confirmation.
+
+Do not silently assume a tax rate.
+
+==================================================
+9. SCREEN 4: ENQUIRY FORM
+==================================================
+
+Create a responsive enquiry form on every package page.
+
+FIELDS:
+
+- Full name.
+- Email.
+- Phone number.
+- Destination.
+- Travel date.
+- Adults.
+- Children.
+- Duration.
+- Budget.
+- Special requirements.
+- WhatsApp follow-up consent checkbox.
+
+VALIDATION:
+
+- Name is required.
+- Valid email.
+- Valid phone number.
+- Adults must be at least one.
+- Children cannot be negative.
+- Budget must be a valid positive amount.
+- Travel date must be valid.
+- Consent must be explicitly recorded.
+
+Do not make WhatsApp consent mandatory for submitting an enquiry.
+
+On submission:
+
+1. Validate the request on the server.
+2. Save the enquiry in MongoDB.
+3. Preserve the original customer message.
+4. Trigger AI extraction.
+5. Generate package recommendations.
+6. Generate a reply draft.
+7. Create a fixed-template acknowledgement.
+8. Display a success confirmation.
+
+If AI fails, the enquiry must still be saved.
+
+Do not lose customer information because an external AI service is unavailable.
+
+==================================================
+10. SCREEN 5: ADMIN DASHBOARD
+==================================================
+
+Create a professional admin dashboard.
+
+SIDEBAR:
+
+- Overview.
+- Packages.
+- Enquiries.
+- Logout.
+
+DASHBOARD CARDS:
+
+- Total Packages.
+- Published Packages.
+- Draft Packages.
+- Total Enquiries.
+- New Enquiries.
+- Pending Enquiries.
+
+All values must be calculated using actual database queries.
+
+Do not hardcode dashboard statistics.
+
+RECENT ENQUIRIES:
+
+Display:
+- Customer.
+- Destination.
+- Date.
+- Budget.
+- Status.
+
+PACKAGE OVERVIEW:
+
+Display package status information.
+
+Use a minimal, readable dashboard.
+
+==================================================
+11. SCREEN 6: PACKAGE CMS
+==================================================
+
+Build a complete package management interface.
+
+FUNCTIONALITY:
+
+- Create package.
+- Edit package.
+- Duplicate package.
+- Archive package.
+- Add photographs.
+- Update description.
+- Add itinerary.
+- Edit itinerary.
+- Add hotels.
+- Add inclusions.
+- Add exclusions.
+- Add seasonal pricing.
+- Save draft.
+- Preview.
+- Publish.
+
+PACKAGE FORM FIELDS:
+
+- Package ID.
+- Title.
+- Slug.
+- Destination.
+- Description.
+- Days.
+- Nights.
+- Hotel category.
+- Photos.
+- Itinerary.
+- Inclusions.
+- Exclusions.
+- Seasonal prices.
+- GST information.
+- Twin-sharing basis.
+- SEO title.
+- SEO description.
+- Status.
+
+SEASONAL PRICING:
+
+Allow multiple seasonal price records.
+
+Each record must contain:
+- Season name.
+- Start month.
+- End month.
+- Price per person.
+- Hotel category.
+- Pricing basis.
+- GST information.
+
+Example:
+
+Peak:
+October–March.
+₹32,500 per person.
+
+Monsoon:
+June–September.
+₹24,900 per person.
+
+Allow editors to update prices without modifying application code.
+
+Validate overlapping seasonal periods and invalid prices.
+
+==================================================
+12. SCREEN 7: PACKAGE PREVIEW AND VERSION HISTORY
+==================================================
+
+Implement proper draft and published version management.
+
+REQUIREMENTS:
+
+- Save draft.
+- Preview draft.
+- Publish draft.
+- View previous versions.
+- View editor.
+- View modification date.
+- Inspect changes.
+
+VERSIONING RULE:
+
+Never overwrite the currently published package when an editor changes a draft.
+
+Use separate immutable version records.
+
+Suggested structure:
+
+Package:
+- packageId.
+- currentPublishedVersion.
+- currentDraftVersion.
+- status.
+
+PackageVersion:
+- packageId.
+- versionNumber.
+- content snapshot.
+- editorId.
+- createdAt.
+- publishedAt.
+- status.
+
+When a draft is published:
+- Validate the content.
+- Create a published snapshot.
+- Update the published version reference.
+- Make the new version publicly accessible.
+
+Public pages must only display the currently published version.
+
+Drafts must never appear publicly or in public search results.
+
+==================================================
+13. SCREEN 8: ADMIN ENQUIRY INBOX
+==================================================
+
+Build a central enquiry management dashboard.
+
+TABLE COLUMNS:
+
+- Customer name.
+- Destination.
+- Travel date.
+- Travellers.
+- Budget.
+- Created date.
+- Status.
+
+FILTERS:
+
+- New.
+- Under Review.
+- Contacted.
+- Qualified.
+- Closed.
+
+SEARCH:
+
+Search customer names and destinations.
+
+When opening an enquiry, display:
+
+A. CUSTOMER DETAILS
+
+- Name.
+- Email.
+- Phone.
+- Travel date.
+- Number of travellers.
+- Budget.
+- WhatsApp consent.
+
+B. ORIGINAL MESSAGE
+
+Display the exact original message submitted by the traveller.
+
+C. AI EXTRACTION
+
+Display:
+- Destination.
+- Adults.
+- Children.
+- Travel duration.
+- Travel month.
+- Budget.
+- Special requirements.
+
+Allow staff to edit extracted fields.
+
+D. PACKAGE SUGGESTIONS
+
+Display three recommended packages.
+
+For each recommendation show:
+- Package title.
+- Destination.
+- Duration.
+- Database price.
+- Matching reasons.
+
+E. AI REPLY DRAFT
+
+Display an editable reply draft.
+
+Actions:
+- Edit.
+- Approve.
+- Mark as contacted.
+
+Never send AI-generated messages without human approval.
+
+F. INTERNAL NOTES
+
+Allow staff to add internal notes.
+
+G. STATUS MANAGEMENT
+
+Allow authorised staff to update enquiry status.
+
+==================================================
+14. AI INTEGRATION
+==================================================
+
+Use Groq API for actual AI functionality.
+
+Do not simulate AI responses.
+
+All AI calls must happen on the server.
+
+Use structured JSON responses and validate them.
+
+A. ENQUIRY EXTRACTION
+
+SAMPLE CUSTOMER MESSAGE:
+
+"Hi, 2 adults and 1 kid, Kerala 5-6 nights in December, budget around 1.2 lakh total, houseboat a must."
+
+EXPECTED STRUCTURED OUTPUT:
+
+{
+  "destination": "Kerala",
+  "adults": 2,
+  "children": 1,
+  "duration": "5-6 nights",
+  "travelMonth": "December",
+  "budget": 120000,
+  "requirements": ["Houseboat"],
+  "missingFields": [],
+  "confidence": "high"
+}
+
+AI must distinguish:
+- Explicitly provided information.
+- Inferred information.
+- Missing information.
+
+Do not invent travel dates or budget details.
+
+B. PACKAGE MATCHING
+
+Recommend the three most suitable packages.
+
+Implement a deterministic backend ranking system.
+
+Example scoring:
+
+Destination match: 35 points.
+Budget compatibility: 25 points.
+Duration compatibility: 20 points.
+Special requirement match: 20 points.
+
+Total: 100 points.
+
+These scores are internal ranking weights, not claims of AI accuracy.
+
+Use only actual published package data.
+
+A package that requires a houseboat should receive a higher match score if the package explicitly includes a houseboat.
+
+Never invent package prices or features.
+
+Return match explanations.
+
+If no suitable packages exist, clearly display that no strong match was found.
+
+C. AI REPLY DRAFTING
+
+Generate a professional response.
+
+The AI must use:
+- Customer requirements.
+- Original enquiry.
+- Actual package details.
+- Actual database prices.
+
+The draft must never contain fabricated availability, discounts or booking confirmations.
+
+Consultant approval is compulsory.
+
+D. AI FAILURE HANDLING
+
+Handle:
+- API timeout.
+- Rate limit.
+- Invalid JSON.
+- Empty response.
+- Missing fields.
+- Network failure.
+- Low-confidence extraction.
+
+When AI fails:
+- Preserve the enquiry.
+- Display a clear failure state.
+- Allow retry.
+- Allow manual correction.
+- Allow manual package selection.
+
+Do not block the admin inbox.
+
+==================================================
+15. FIXED ACKNOWLEDGEMENT
+==================================================
+
+Every submitted enquiry should receive an immediate acknowledgement through an in-application acknowledgement workflow.
+
+Example:
+
+"Thank you for your enquiry! We have received your travel requirements. Our travel team will review your request and get back to you shortly."
+
+Store the acknowledgement status and timestamp.
+
+Because no external messaging provider is included, implement an in-app acknowledgement and clearly label external email or WhatsApp delivery as not configured.
+
+Do not falsely claim that a WhatsApp or email was delivered.
+
+==================================================
+16. DATABASE MODELS
+==================================================
+
+Create these MongoDB models.
+
+1. User
+2. Package
+3. PackageVersion
+4. Enquiry
+5. AIExtraction
+6. EnquiryReply
+7. ActivityLog
+
+USER:
+
+- name.
+- email.
+- passwordHash.
+- role.
+- createdAt.
+- updatedAt.
+
+PACKAGE:
+
+- packageId.
+- title.
+- slug.
+- destination.
+- description.
+- days.
+- nights.
+- hotelCategory.
+- photos.
+- itinerary.
+- inclusions.
+- exclusions.
+- seasonalPrices.
+- gstInformation.
+- pricingBasis.
+- currentPublishedVersion.
+- currentDraftVersion.
+- status.
+- createdAt.
+- updatedAt.
+
+PACKAGE VERSION:
+
+- packageId.
+- versionNumber.
+- contentSnapshot.
+- editorId.
+- status.
+- createdAt.
+- publishedAt.
+
+ENQUIRY:
+
+- customerName.
+- email.
+- phone.
+- destination.
+- travelDate.
+- adults.
+- children.
+- duration.
+- budget.
+- originalMessage.
+- whatsappConsent.
+- status.
+- assignedTo.
+- acknowledgementStatus.
+- createdAt.
+
+AI EXTRACTION:
+
+- enquiryId.
+- extractedFields.
+- confidence.
+- missingFields.
+- correctionHistory.
+- processingStatus.
+
+ENQUIRY REPLY:
+
+- enquiryId.
+- draftContent.
+- approvalStatus.
+- approvedBy.
+- approvedAt.
+- createdAt.
+
+ACTIVITY LOG:
+
+- userId.
+- action.
+- entityType.
+- entityId.
+- timestamp.
+- metadata.
+
+Create appropriate indexes and unique constraints.
+
+Use timestamps and schema validation.
+
+==================================================
+17. SAMPLE DATA
+==================================================
+
+Seed the database using the exact client-provided data.
+
+PACKAGE 1:
+
+ID:
+PKG-KL-07
+
+TITLE:
+Munnar, Thekkady and Alleppey houseboat
+
+DURATION:
+6 days.
+
+HOTEL:
+4 star.
+
+PEAK SEASON:
+October–March.
+
+PEAK PRICE:
+₹32,500 per person.
+
+MONSOON SEASON:
+June–September.
+
+MONSOON PRICE:
+₹24,900 per person.
+
+STATUS:
+Published.
+
+PACKAGE 2:
+
+ID:
+PKG-SI-12
+
+TITLE:
+Madurai, Rameswaram and Kanyakumari
+
+DURATION:
+5 days.
+
+HOTEL:
+3 star.
+
+SEASON:
+All year.
+
+PRICE:
+₹18,750 per person.
+
+STATUS:
+Draft.
+
+SAMPLE ENQUIRY:
+
+"Hi, 2 adults and 1 kid, Kerala 5-6 nights in December, budget around 1.2 lakh total, houseboat a must."
+
+Use these exact details.
+
+For any additional information needed to display the packages, use clearly labelled sample assumptions.
+
+Do not claim invented hotel names, contact information, customer testimonials or company credentials are real.
+
+Provide a seed script that can be run repeatedly without creating duplicate sample records.
+
+==================================================
+18. AUTHENTICATION AND SECURITY
+==================================================
+
+Implement secure authentication.
+
+Requirements:
+
+- Login.
+- Logout.
+- Password hashing.
+- HTTP-only cookies.
+- Server-side session validation.
+- Role-based access.
+- Protected routes.
+- API authorisation.
+- Input validation.
+- Rate limiting.
+- Safe error responses.
+- Secure environment variables.
+
+Prevent:
+- Unauthorised package modification.
+- Unauthorised draft access.
+- Unauthorised enquiry access.
+- Password exposure.
+- API key exposure.
+- Mass assignment.
+- Injection vulnerabilities.
+
+Do not include real customer personal information in sample data.
+
+Create a demo admin account using a seed script.
+
+Do not hardcode production credentials.
+
+==================================================
+19. SEO REQUIREMENTS
+==================================================
+
+Public pages must be search-engine friendly.
+
+Implement:
+
+- Server-rendered package pages.
+- Clean URLs.
+- Unique page titles.
+- Meta descriptions.
+- Open Graph metadata.
+- Canonical URLs.
+- Sitemap.xml.
+- Robots.txt.
+- Structured data where appropriate.
+- Configurable redirects for legacy URLs.
+
+The client has approximately 140 old URLs.
+
+Implement a redirect configuration mechanism, but do not invent the actual 140 mappings.
+
+Only published packages should be indexed.
+
+Optimise images.
+
+Target loading below 2.5 seconds on 4G.
+
+==================================================
+20. OPTIONAL FEATURES
+==================================================
+
+Only after the CORE BUILD is fully functional, implement optional features if time permits.
+
+OPTIONAL A: BLOG CMS
+
+- Create blogs.
+- Edit blogs.
+- Delete blogs.
+- Rich-text editor.
+- Categories.
+- Featured image.
+- SEO title.
+- Meta description.
+- Related packages.
+
+OPTIONAL B: QUOTE BUILDER
+
+- Generate branded quotation.
+- Use actual package prices.
+- Generate PDF.
+- Generate shareable quotation link.
+
+OPTIONAL C: ACTIVITY HISTORY
+
+- Record package changes.
+- Record publishing events.
+- Record enquiry status updates.
+- Record admin actions.
+
+Do not spend time on optional functionality if mandatory workflows are incomplete.
+
+==================================================
+21. USER EXPERIENCE REQUIREMENTS
+==================================================
+
+The entire application must be responsive.
+
+Support:
+- Desktop.
+- Tablet.
+- Mobile.
+
+Implement:
+- Loading skeletons.
+- Empty states.
+- Error states.
+- Form validation.
+- Success notifications.
+- Confirmation dialogs.
+- Accessible labels.
+- Keyboard navigation.
+
+Use consistent typography, spacing, buttons and cards.
+
+Make every important interaction functional.
+
+Do not leave placeholder buttons.
+
+==================================================
+22. TESTING REQUIREMENTS
+==================================================
+
+Write tests for:
+
+AUTHENTICATION:
+- Successful login.
+- Incorrect password.
+- Unauthorised access.
+- Role permissions.
+
+PACKAGE CMS:
+- Package creation.
+- Package editing.
+- Seasonal price validation.
+- Draft creation.
+- Preview.
+- Publishing.
+- Version preservation.
+
+ENQUIRIES:
+- Form validation.
+- Enquiry creation.
+- Database persistence.
+- Status changes.
+- WhatsApp consent storage.
+
+AI:
+- Valid JSON extraction.
+- Invalid JSON handling.
+- Missing fields.
+- API timeout.
+- Retry.
+- Package ranking.
+- Reply drafting.
+
+Ensure critical tests pass.
+
+==================================================
+23. ENVIRONMENT VARIABLES
+==================================================
+
+Create .env.example containing names only.
+
+MONGODB_URI=
+GROQ_API_KEY=
+JWT_SECRET=
+NEXT_PUBLIC_APP_URL=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+Never commit actual credentials.
+
+Ensure .env.local is included in .gitignore.
+
+Do not expose secret variables through NEXT_PUBLIC_ prefixed names.
+
+==================================================
+24. PROJECT STRUCTURE
+==================================================
+
+Use a clean, maintainable structure similar to:
+
+wandercms/
+│
+├── public/
+│
+├── src/
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── packages/
+│   │   ├── destinations/
+│   │   ├── enquiry/
+│   │   ├── login/
+│   │   ├── admin/
+│   │   │   ├── dashboard/
+│   │   │   ├── packages/
+│   │   │   ├── enquiries/
+│   │   │   └── preview/
+│   │   └── api/
+│   │
+│   ├── components/
+│   │   ├── public/
+│   │   ├── admin/
+│   │   ├── forms/
+│   │   └── shared/
+│   │
+│   ├── models/
+│   ├── lib/
+│   ├── services/
+│   ├── validators/
+│   ├── hooks/
+│   └── types/
+│
+├── scripts/
+│   └── seed.ts
+│
+├── tests/
+│
+├── .env.example
+├── .gitignore
+├── package.json
+├── README.md
+└── deployment.md
+
+You may adjust this structure if a better architectural arrangement is required.
+
+==================================================
+25. DOCUMENTATION
+==================================================
+
+Create README.md.
+
+Include:
+- Project description.
+- Problem being solved.
+- Features.
+- Technology stack.
+- Architecture.
+- Database design.
+- Installation instructions.
+- Environment setup.
+- Running instructions.
+- Testing instructions.
+
+Prepare a Technical Design Document containing:
+
+1. GitHub repository URL at the very top.
+2. Live application URL, if deployed.
+3. Project overview.
+4. Architecture diagram.
+5. Technology decisions and reasons.
+6. Database schema.
+7. Main user workflows.
+8. AI extraction workflow.
+9. AI package recommendation algorithm.
+10. AI failure handling.
+11. Screenshots and UI decisions.
+12. Security measures.
+13. Testing strategy.
+14. Assumptions.
+15. Limitations.
+16. Future improvements.
+
+Create deployment.md containing:
+
+1. Prerequisites.
+2. Repository cloning.
+3. Dependency installation.
+4. MongoDB configuration.
+5. Environment variable names.
+6. Local startup instructions.
+7. Database seeding.
+8. Test instructions.
+9. Deployment instructions.
+10. Demo account credentials.
+
+Do not invent a GitHub URL or live URL. Leave clearly marked placeholders until actual deployment.
+
+==================================================
+26. DEVELOPMENT PHASES
+==================================================
+
+Follow this exact priority.
+
+PHASE 1:
+- Project setup.
+- Database connection.
+- Mongoose models.
+- Authentication.
+- Admin seed account.
+
+PHASE 2:
+- Homepage.
+- Package listing.
+- Package detail pages.
+- Search.
+
+PHASE 3:
+- Package CMS.
+- Seasonal pricing.
+- Draft and published states.
+- Package preview.
+- Version history.
+
+PHASE 4:
+- Enquiry form.
+- Database persistence.
+- Acknowledgement.
+
+PHASE 5:
+- Admin enquiry inbox.
+- Status management.
+- Internal notes.
+
+PHASE 6:
+- Actual Groq integration.
+- Enquiry extraction.
+- Package recommendations.
+- AI reply drafts.
+- Failure handling.
+
+PHASE 7:
+- Security.
+- Testing.
+- SEO.
+- Performance.
+- Responsive design.
+
+PHASE 8:
+- Documentation.
+- Deployment.
+- Final verification.
+
+==================================================
+27. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+Before considering the application complete, verify:
+
+[ ] Homepage loads.
+
+[ ] Package listing loads real database records.
+
+[ ] Search works.
+
+[ ] Package detail pages work.
+
+[ ] Seasonal pricing displays correctly.
+
+[ ] Traveller can submit an enquiry.
+
+[ ] Enquiry is saved in MongoDB.
+
+[ ] Fixed acknowledgement is recorded.
+
+[ ] AI extracts customer requirements.
+
+[ ] AI failure does not lose an enquiry.
+
+[ ] Three package suggestions are generated using actual package data.
+
+[ ] Admin login works.
+
+[ ] Traveller cannot access admin routes.
+
+[ ] Admin can create packages.
+
+[ ] Admin can edit packages.
+
+[ ] Admin can manage seasonal pricing.
+
+[ ] Admin can save drafts.
+
+[ ] Admin can preview drafts.
+
+[ ] Admin can publish packages.
+
+[ ] Published versions are preserved.
+
+[ ] Drafts are not publicly visible.
+
+[ ] Admin can view all enquiries.
+
+[ ] Admin can correct AI-extracted information.
+
+[ ] Admin can edit AI reply drafts.
+
+[ ] AI replies require human approval.
+
+[ ] No real secrets are committed.
+
+[ ] Important tests pass.
+
+[ ] Mobile layout works.
+
+[ ] Loading, empty and error states exist.
+
+[ ] Documentation is complete.
+
+[ ] Application runs locally.
+
+[ ] Deployment configuration is available.
+
+==================================================
+28. CRITICAL INSTRUCTIONS TO THE AI BUILDER
+==================================================
+
+Do not stop after generating a homepage.
+
+Do not generate only frontend components.
+
+Do not use static hardcoded arrays as a substitute for database functionality.
+
+Do not fake AI functionality.
+
+Do not create non-functional buttons.
+
+Do not skip authentication.
+
+Do not expose API keys.
+
+Do not invent client information.
+
+Do not automatically publish drafts.
+
+Do not automatically send AI-generated replies.
+
+Do not let AI invent prices.
+
+Do not use external services without handling failures.
+
+Do not claim that an application is deployed unless it actually is.
+
+Do not claim tests pass unless they have been executed.
+
+Use realistic sample data.
+
+Prioritise the mandatory CORE BUILD.
+
+If the project is too large to generate in one operation, implement it incrementally while preserving the same architecture and requirements.
+
+After each phase:
+1. Inspect the generated code.
+2. Check imports and dependencies.
+3. Check database integration.
+4. Check API functionality.
+5. Run relevant tests.
+6. Fix errors before moving forward.
+
+FIRST ACTION:
+
+Analyse the complete specification.
+
+Create the project architecture.
+
+Then start implementing the actual application.
+
+The final result must be a polished, functional, end-to-end product that a client can log into and test.
+
+The goal is to demonstrate excellent software engineering, practical problem-solving, clean architecture, thoughtful UI/UX and responsible AI integration.

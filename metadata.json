@@ -1,0 +1,6 @@
+{
+  "name": "WanderCMS",
+  "description": "AI-powered Tour Operator Website and Content Management System for South India travel packages, seasonal pricing, and smart enquiry processing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
