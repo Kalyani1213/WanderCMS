@@ -1,6 +1,7 @@
 import React from 'react';
 import { TravelPackage, getStartingPrice } from '../../types';
 import { ArrowRight, Calendar, Star, MapPin } from 'lucide-react';
+import { DESTINATION_IMAGES } from '../../assets/images';
 
 interface PackageCardProps {
   pkg: TravelPackage;
@@ -10,7 +11,7 @@ interface PackageCardProps {
 
 export const PackageCard: React.FC<PackageCardProps> = ({ pkg, onViewDetails, onEnquire }) => {
   const startingPrice = getStartingPrice(pkg);
-  const primaryPhoto = pkg.photos && pkg.photos.length > 0 ? pkg.photos[0] : '/src/assets/images/hero_kerala_tea_mist_1794053733109.jpg';
+  const primaryPhoto = pkg.photos && pkg.photos.length > 0 ? pkg.photos[0] : DESTINATION_IMAGES.heroKerala;
 
   // Highlight season name if available
   const activeSeason = pkg.seasonalPrices?.[0]?.seasonName || 'Standard';

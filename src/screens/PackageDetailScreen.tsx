@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
 import { TravelPackage, getStartingPrice } from '../types';
+import { DESTINATION_IMAGES } from '../assets/images';
 import {
   Compass,
   Star,
@@ -125,7 +126,7 @@ export const PackageDetailScreen: React.FC<PackageDetailScreenProps> = ({
   }
 
   const startingPrice = getStartingPrice(pkg);
-  const photos = pkg.photos && pkg.photos.length > 0 ? pkg.photos : ['/src/assets/images/hero_kerala_tea_mist_1794053733109.jpg'];
+  const photos = pkg.photos && pkg.photos.length > 0 ? pkg.photos : [DESTINATION_IMAGES.heroKerala];
 
   return (
     <div className="space-y-10 pb-20">

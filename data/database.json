@@ -4,7 +4,7 @@
       "id": "usr_admin_01",
       "name": "Rohan Varma (Operations)",
       "email": "admin@wandercms.com",
-      "passwordHash": "$2b$10$77E0edXq07grfu7OLXfS/udYmBUq8V/OsySCeE114r47GNZ1CfYWq",
+      "passwordHash": "$2b$10$Zgr7wSCRO0oviDQIQ7gZaejkObnwMQbZWnQzygwZPrBX3BTX1yNZy",
       "role": "staff-admin",
       "createdAt": "2026-01-01T00:00:00.000Z",
       "updatedAt": "2026-01-01T00:00:00.000Z"
@@ -13,7 +13,7 @@
       "id": "usr_traveller_01",
       "name": "Vikram Malhotra",
       "email": "vikram.malhotra@gmail.com",
-      "passwordHash": "$2b$10$cT7QFxKs4yY45N1DDMHxQeddqFEGOO8ubuYtEiDh172d3ASvHrSgS",
+      "passwordHash": "$2b$10$ZdrVa1qV3xkHCLZY4TFcOu3I13jG3xy2LD4OWhTuC9X.Dudyzg6j.",
       "role": "traveller",
       "createdAt": "2026-01-01T00:00:00.000Z",
       "updatedAt": "2026-01-01T00:00:00.000Z"
@@ -31,9 +31,9 @@
       "nights": 5,
       "hotelCategory": "4 star",
       "photos": [
-        "/src/assets/images/alleppey_luxury_houseboat_1794053734427.jpg",
-        "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg",
-        "/src/assets/images/thekkady_forest_lake_1794053736196.jpg"
+        "/images/alleppey_luxury_houseboat_1794053734427.jpg",
+        "/images/munnar_emerald_plantation_1794219763504.jpg",
+        "/images/thekkady_forest_lake_1794053736196.jpg"
       ],
       "itinerary": [
         {
@@ -141,8 +141,8 @@
       "nights": 4,
       "hotelCategory": "3 star",
       "photos": [
-        "/src/assets/images/madurai_temple_gopuram_1794053736171.jpg",
-        "/src/assets/images/kanyakumari_memorial_ocean_1794053735714.jpg"
+        "/images/madurai_temple_gopuram_1794053736171.jpg",
+        "/images/kanyakumari_memorial_ocean_1794053735714.jpg"
       ],
       "itinerary": [
         {
@@ -229,8 +229,8 @@
       "nights": 3,
       "hotelCategory": "4 star",
       "photos": [
-        "/src/assets/images/thekkady_forest_lake_1794053736196.jpg",
-        "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg"
+        "/images/thekkady_forest_lake_1794053736196.jpg",
+        "/images/munnar_emerald_plantation_1794219763504.jpg"
       ],
       "itinerary": [
         {
@@ -327,9 +327,9 @@
         "nights": 5,
         "hotelCategory": "4 star",
         "photos": [
-          "/src/assets/images/alleppey_luxury_houseboat_1794053734427.jpg",
-          "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg",
-          "/src/assets/images/thekkady_forest_lake_1794053736196.jpg"
+          "/images/alleppey_luxury_houseboat_1794053734427.jpg",
+          "/images/munnar_emerald_plantation_1794219763504.jpg",
+          "/images/thekkady_forest_lake_1794053736196.jpg"
         ],
         "itinerary": [
           {
@@ -447,8 +447,8 @@
         "nights": 4,
         "hotelCategory": "3 star",
         "photos": [
-          "/src/assets/images/madurai_temple_gopuram_1794053736171.jpg",
-          "/src/assets/images/kanyakumari_memorial_ocean_1794053735714.jpg"
+          "/images/madurai_temple_gopuram_1794053736171.jpg",
+          "/images/kanyakumari_memorial_ocean_1794053735714.jpg"
         ],
         "itinerary": [
           {
@@ -544,8 +544,8 @@
         "nights": 3,
         "hotelCategory": "4 star",
         "photos": [
-          "/src/assets/images/thekkady_forest_lake_1794053736196.jpg",
-          "/src/assets/images/munnar_emerald_plantation_1794219763504.jpg"
+          "/images/thekkady_forest_lake_1794053736196.jpg",
+          "/images/munnar_emerald_plantation_1794219763504.jpg"
         ],
         "itinerary": [
           {
@@ -657,14 +657,14 @@
           "createdAt": "2026-11-06T14:30:05.000Z"
         },
         {
-          "id": "note_1794220585212",
+          "id": "note_1794227654308",
           "author": "WanderCMS Mail Desk",
           "text": "Official booking summary & quotation dispatched to kalyanilalugani1312@gmail.com",
-          "createdAt": "2026-11-09T10:36:25.212Z"
+          "createdAt": "2026-11-09T12:34:14.308Z"
         }
       ],
       "createdAt": "2026-11-06T14:30:00.000Z",
-      "updatedAt": "2026-11-09T10:36:25.212Z"
+      "updatedAt": "2026-11-09T12:34:14.308Z"
     }
   ],
   "aiExtractions": [
@@ -704,13 +704,13 @@
   ],
   "activityLogs": [
     {
-      "id": "act_1794220585213_5s64",
+      "id": "act_1794227654309_2qvg",
       "userId": "traveller",
       "userName": "traveller",
       "action": "Dispatched travel quotation voucher to Gmail (kalyanilalugani1312@gmail.com) for booking #2026-001",
       "entityType": "enquiry",
       "entityId": "ENQ-2026-001",
-      "timestamp": "2026-11-09T10:36:25.213Z"
+      "timestamp": "2026-11-09T12:34:14.309Z"
     },
     {
       "id": "act_init_01",
